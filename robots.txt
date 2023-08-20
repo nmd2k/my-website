@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://nmd2k.github.io/nmd2k/sitemap.xml
+Sitemap: https://nmd2k.github.io/sitemap.xml
