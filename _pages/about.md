@@ -2,25 +2,28 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Hello World! How are you?
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Me at FPT AI Center</p>
 
 news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+Hi, I'm Dung (Dzung). I graduated with honors degree in Computer Science from [University of Engineering and Technology, Vietnam National University](https://uet.vnu.edu.vn/truong-dai-hoc-cong-nghe-15-nam-xay-dung-va-truong-thanh/) (UET). 
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<!-- During my uni days at UET AI laboratory, I dove into projects that brought computer vision and machine learning to life – think detecting human motion. I even ventured into the intriguing realm of multilingual datasets and conversational AI, aiming to spread language prowess to Vietnamese. -->
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Since 2022, I've been working as a researcher and engineer at [FPT Software AI Center's AI Residency program](https://www.fpt-aicenter.com/ai-residency/), where I received guidance from [Dr. Nghi Bui](https://bdqnghi.github.io/) from Singapore Management University.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Evolving into my current role as an AI researcher, I'm all about embedding Machine Learning, Deep Learning into Software systems thought out problems like **code search, code summarization, code generation**, etc. The ultimate aim of my research is to revolutionize the way software is developed, improving its **effectiveness, dependability, and accessibility**. My goal is to develop AI-powered tools that can seamlessly **understand, produce, and optimize source code, minimizing human effort and error**.
+
+Therefore, I'm also working on AI-powered solutions for real-world software problems, like [suggeting comments for source code](https://marketplace.visualstudio.com/items?itemName=AIC.docify&ssr=false&fbclid=IwAR1NitAdBfanSTWP_gIqgXQPsb1DcIpXW-f-13drZ5HKnV59V20D-QXOow8) and [extracting code structures for AI models](https://github.com/FSoft-AI4Code/CodeText-parser). Lately, with the wave of Large Language Models, I spent my work on integrating LLMs into coding-assist Chatbots and Unit-test generator for developer.
+
+I’m best reached via [email](mailto:dungnm.workspace@gmail.com). I’m always up for dicussions, collaboration, or opportunities to pursue higher education abroad.

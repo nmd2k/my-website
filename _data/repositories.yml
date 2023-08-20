@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - nmd2k
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - FSoft-AI4Code/TheVault
+  - FSoft-AI4Code/CodeText-parser
+  - UETAILab/uetai
+  - nmd2k/speech-enhancement
