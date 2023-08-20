@@ -16,7 +16,7 @@ latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-I'm Dung (Dzung). I graduated with honors degree in Computer Science from [University of Engineering and Technology, Vietnam National University](https://uet.vnu.edu.vn/truong-dai-hoc-cong-nghe-15-nam-xay-dung-va-truong-thanh/) (UET). 
+:wave: I'm Dung (Dzung). I graduated with honors degree in Computer Science from [University of Engineering and Technology, Vietnam National University](https://uet.vnu.edu.vn/truong-dai-hoc-cong-nghe-15-nam-xay-dung-va-truong-thanh/) (UET). 
 
 <!-- During my uni days at UET AI laboratory, I dove into projects that brought computer vision and machine learning to life – think detecting human motion. I even ventured into the intriguing realm of multilingual datasets and conversational AI, aiming to spread language prowess to Vietnamese. -->
 
