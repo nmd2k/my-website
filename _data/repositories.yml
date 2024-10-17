@@ -4,6 +4,7 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - FSoft-AI4Code/CodeMMLU
   - FSoft-AI4Code/TheVault
   - FSoft-AI4Code/CodeText-parser
   - UETAILab/uetai

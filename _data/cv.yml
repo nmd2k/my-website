@@ -4,11 +4,11 @@
     - name: Full Name
       value: Dung Nguyen Manh
     - name: Title
-      value: AI Researcher
+      value: Research Resident
     - name: Email
       value: dungnm.workspace@🅖🅜🅐🅘🅛.🅒🅞🅜
     - name: Languages
-      value: English, Vietnamese
+      value: Vietnamese (native), English
 
 - title: Education
   type: time_table
@@ -40,8 +40,11 @@
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/FSoft-AI4Code/code-llm-evaluator">Code LLM Evaluator</a>
+    - title: <a href="https://github.com/FSoft-AI4Code/CodeMMLU">CodeMMLU</a>
       year: 2024 - now
+      description: A Multi-Task Benchmark for Assessing Code Understanding Capabilities.
+    - title: <a href="https://github.com/FSoft-AI4Code/code-llm-evaluator">Code LLM Evaluator</a>
+      year: 2024
       description: Framework to evaluate with instant fast inference for code generation model.
     - title: <a href="https://github.com/FSoft-AI4Code/CodeText-parser">CodeText-parser</a>
       year: 2022 - 2023
