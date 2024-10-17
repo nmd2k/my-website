@@ -12,8 +12,13 @@ For conference ranking, please refer to:
 - [Google Scholar Metrics.](https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng)
 
 <!-- _pages/publications.md -->
+
+<!-- Bibsearch Feature -->
+
+{% include bib_search.liquid %}
+
 <div class="publications">
 
-{% bibliography -f {{ site.scholar.bibliography }} %}
+{% bibliography %}
 
 </div>
