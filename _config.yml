@@ -12,12 +12,11 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: # add your own keywords or leave empty
-
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: icon.png  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: icon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://nmd2k.github.io # the base hostname & protocol for your site
-baseurl:  # the subpath of your site, e.g. /blog/
+baseurl: # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -27,8 +26,8 @@ back_to_top: true # set to false to disable the back to top button
 # -----------------------------------------------------------------------------
 
 # repo color theme
-repo_theme_light: vue       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: ayu-mirage           # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_light: vue # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_dark: ayu-mirage # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
   enabled: true
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
@@ -147,15 +146,15 @@ related_blog_posts:
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
-  repo: nmd2k/nmd2k.github.io      # <your-github-user-name>/<your-github-repo-name>
+  repo: nmd2k/nmd2k.github.io # <your-github-user-name>/<your-github-repo-name>
   repo_id: R_kgDOKI3PPw
-  category: Comments             # name of the category under which discussions will be created
+  category: Comments # name of the category under which discussions will be created
   category_id: DIC_kwDOKI3PP84CYuXs
-  mapping: title                 # identify discussions by post title
-  strict: 1                      # use strict identification mode
-  reactions_enabled: 1           # enable (1) or disable (0) emoji reactions
-  input_position: bottom         # whether to display input form below (bottom) or above (top) the comments
-  theme: preferred_color_scheme  # name of the color scheme (preferred works well with al-folio light/dark mode)
+  mapping: title # identify discussions by post title
+  strict: 1 # use strict identification mode
+  reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
+  input_position: bottom # whether to display input form below (bottom) or above (top) the comments
+  theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode)
   lang: en
 
 # Disqus comments (DEPRECATED)
@@ -310,7 +309,6 @@ jekyll-archives:
 # -----------------------------------------------------------------------------
 
 scholar:
-
   last_name: [Nguyen Manh, Manh, Nguyen]
   first_name: [Dung, Dung Nguyen, DN, Dung Manh]
 
@@ -371,8 +369,8 @@ filtered_bibtex_keywords:
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit:  # leave blank to always show all authors
-more_authors_animation_delay: 10  # more authors are revealed on click using animation; smaller delay means faster animation
+max_author_limit: # leave blank to always show all authors
+more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
 enable_publication_thumbnails: true
