@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I got my Bachelor degree in Computer Science from University of Engineering and Technology, Vietnam National Unviersity (CGPA: 3.61).
+I got my Bachelor degree in Computer Science from University of Engineering and Technology, Vietnam National Unviersity (CGPA: 3.61). 🧑‍🎓💐

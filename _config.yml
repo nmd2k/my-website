@@ -3,9 +3,9 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Dung
-middle_name: Nguyen
-last_name: Manh
+first_name: Dũng
+middle_name: Nguyễn
+last_name: Mạnh
 email: dungnm.workspace@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   :wave: Hi, my name is Dung (Dzung). I'm a computer scientist working on AI for software systems.
@@ -288,8 +288,8 @@ jekyll-archives:
 
 scholar:
 
-  last_name: [Nguyen Manh, Manh]
-  first_name: [Dung, Dung Nguyen, DN]
+  last_name: [Nguyen Manh, Manh, Nguyen]
+  first_name: [Dung, Dung Nguyen, DN, Dung Manh]
 
   style: apa
   locale: en

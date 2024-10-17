@@ -5,5 +5,10 @@
 "PhysRev":
   url: https://journals.aps.org/
 
-"EMNLP":
+"EMNLP’23":
   url: https://2023.emnlp.org/calls/main_conference_papers
+  color: "#26C6DA"
+
+"ArXiv.preprint":
+  url: https://arxiv.org/
+  color: "#A03232"
