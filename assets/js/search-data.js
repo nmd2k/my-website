@@ -48,6 +48,17 @@ ninja.data = [{
             window.location.href = "/blog/2024/moe/";
           
         },
+      },{id: "post-hội-nghị-đầu-tiên-emnlp-quot-2023",
+        
+          title: "Hội nghị đầu tiên - EMNLP&quot;2023",
+        
+        description: "Bài báo đầu tiên và những trải nghiệm cá nhân tại hội nghị",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/emnlp-2023-trip/";
+          
+        },
       },{id: "post-alternative-dataset-for-code-understanding-and-generation",
         
           title: "Alternative dataset for Code Understanding and Generation",
