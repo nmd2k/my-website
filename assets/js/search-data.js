@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-mixture-of-expert-explanation",
+        },{id: "post-tâm-sự-1-vì-sao-cầu-lông",
+        
+          title: "Tâm sự #1: Vì sao cầu lông",
+        
+        description: "Cầu lông và tôi sau một năm luyện tập và giao lưu",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/badminton-blog/";
+          
+        },
+      },{id: "post-mixture-of-expert-explanation",
         
           title: "Mixture of expert explanation",
         
