@@ -1,6 +1,6 @@
 ---
-title: "CodeMMLU: A Multi-Task Benchmark for Assessing Code Understanding Capabilities of CodeLLMs" 
-date: 2024-10-02
+title: "[ICLR'25] CodeMMLU: A Multi-Task Benchmark for Assessing Code Understanding Capabilities of CodeLLMs" 
+date: 2025-04-09
 tags: ["CodeLLMs","Code Understanding","Benchmark"]
 author: ["Dung Nguyen Manh","Thang Phan Chau","Nam Le Hai","Thong T. Doan","Nam V. Nguyen","Quang Pham","Nghi D. Q. Bui"]
 cover:

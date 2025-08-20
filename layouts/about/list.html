@@ -19,6 +19,11 @@
     <div class="social-icons-section">
       <div class="social-icons">
         {{- range $meData.contact }}
+          {{- if .cv }}
+            <a href="{{ .cv }}" title="CV">
+              {{ partial "svg.html" (dict "name" "cv") }}
+            </a>
+          {{- end }}
           {{- if .email }}
             <a href="{{ .email }}" title="Email">
               {{ partial "svg.html" (dict "name" "email") }}
@@ -69,14 +74,18 @@
     </div>
     {{- end }}
 
-    {{- $meData := site.Data.me }}
     {{- if $meData }}
-    
+    <section class="content-section">
+      <h2>About me</h2>
+      <p class="section-subtitle">{{ $meData.about_me | safeHTML }}</p>
+    </section>
+
     <!-- AI Research Focus -->
     <section class="content-section">
-      <h2>Research Focus</h2>
-      <p class="section-subtitle">{{ $meData.research_interests | default "Advancing autonomous systems for software development" }}</p>
+      <h2>Research focus</h2>
+      <p class="section-subtitle">{{ $meData.research_interests | safeHTML }}</p>
     </section>
+    {{- end }}
 
     <!-- Education -->
     {{- if $meData.education }}
@@ -162,8 +171,7 @@
     </section>
     {{- end }}
 
-    {{- end }}
   </main>
 </div>
-
 {{- end }}{{- /* end main */ -}}
+

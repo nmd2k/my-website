@@ -1,6 +1,7 @@
 ---
-title: "On the Impacts of Contexts on Repository-Level Code Generation" 
+title: "[NAACL'25] On the Impacts of Contexts on Repository-Level Code Generation" 
 author: ["Nam Le Hai", "Dung Nguyen Manh", "Nghi D. Q. Bui"]
+date: 2025-07-01
 editPost:
     URL: "https://arxiv.org/abs/2406.11927"
     Text: "NAACL'25"

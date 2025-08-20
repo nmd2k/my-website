@@ -1,22 +1,54 @@
 
 profile_name: Dũng Nguyen Manh
-profile_title: PhD Student
-profile_tagline: building autonomous coding agents
+profile_title: PhD Student @ UniMelb
+profile_tagline: building secure AI for SWE
 
 contact:
+  - cv: /pdf/cv_2025.pdf
   - email: mailto:dungnm.workspace@gmail.com
   - linkedin: nmd2k
   - github: nmd2k
   - scholar_id: BHpeA4MAAAAJ
 
-research_interests: "My research interest is building autonomous coding agents and advancing code understanding capabilities through large language models."
+about_me: "
+  In 2025, I am honored to have been awarded the Melbourne Research Scholarship for talented individuals. 
+  I am currently pursuing my PhD at the University of Melbourne (ranked 19* worldwide), 
+  under the supervision of Dr. Bach Le Dinh Xuan and Dr. Thuan Nguyen.<br><br>
+  Previously, I graduated with a Bachelor's degree in Computer Science from Vietnam National University in 2022, 
+  where I was supervised by Dr. Tran Quoc Long, Director of the Institute for Artificial Intelligence.<br><br>
 
+  From 2022 to 2025, I joined the AI Residency Program at the FPT AI Center**, 
+  working alongside outstanding young researchers across Vietnam. 
+  With invaluable mentorship from Dr. Nghi Bui (Salesforce Senior Scientist; 
+  Product Owner & Lab Manager at FPT Software) and Dr. Quang Pham (Research Scientist at A*STAR), 
+  I published research papers at leading international conferences, including ICLR, EMNLP, and NAACL.<br><br>
+
+  Beyond academia, I am an active contributor to open-source projects and always 
+  welcome opportunities for collaboration. The best way to reach me is via email.<br><br>
+
+  <i style='font-size: 0.8em;'>
+  * According to <a href='https://www.topuniversities.com/world-university-rankings'>QS World University Rankings 2025</a><br>
+  ** Listed among the <a href='https://fptsoftware.com/resource-center/whitepaper/leveraging-genai-to-supercharge-your-digital-business-insights-from-fpt-software-and-idc'>Top 50 AI Labs worldwide</a> 
+  </i>
+  "
+
+research_interests: "
+  My research lies at the intersection of <strong>large language models (LLMs), software engineering, and cybersecurity</strong>. I am particularly interested in making AI-powered code generation more <strong>secure, reliable, and trustworthy</strong>. <br><br>
+
+  Specifically, I focus on:<br>
+    • <strong>Reinforcement Learning for Secure Code</strong> designing RL-based methods (e.g., PPO, DPO, multi-agent RL) to align LLMs with secure software engineering practices.<br>
+    • <strong>Adversarial Robustness</strong> developing fine-tuning and adversarial training strategies to reduce vulnerabilities in LLM-generated code.<br>
+    • <strong>Benchmarking & Evaluation</strong> creating new benchmarks to measure threat awareness, vulnerability detection, and resilience of LLMs in real-world scenarios.<br>
+    • <strong>Automation in Secure Software Development</strong> building scalable frameworks that integrate security into LLM-powered coding assistants, reducing reliance on human oversight.<br><br>
+
+  Broadly, my goal is to advance <strong>secure and autonomous software engineering</strong>, ensuring that the next generation of AI systems can empower developers without amplifying cybersecurity risks.
+  "
 education:
   - title: Doctor of Philosophy, Engineering and IT
     institution: The University of Melbourne, Australia
     year: 2025 - now
     description:
-      - "Topic: AI for security in software development"
+      - "Topic: Secure AI for software development"
       - Melbourne Research Scholarship
   - title: Bachelor of Computer Science
     institution: Vietnam National University, Hanoi
@@ -27,7 +59,7 @@ education:
 
 experience:
   - title: AI Resident
-    institution: FPTSoftware AI Center, FPT
+    institution: FPT Software AI Center, FPT
     year: Jul 2022 - Aug 2025
   - title: Undergraduate Student Researcher
     institution: Vietnam National University, Hanoi
@@ -37,13 +69,11 @@ experience:
     year: Apr 2021 - Jul 2021
 
 projects:
-  - title: CodeMMLU
+  - title: "CodeMMLU: Multi-choice QA benchmark"
     url: "https://github.com/FSoft-AI4Code/CodeMMLU"
-  - title: Code-llm-evaluator
-    url: "https://github.com/FSoft-AI4Code/code-llm-evaluator"
-  - title: CodeText-parser
+  - title: "CodeText: tree-sitter parser for code"
     url: "https://github.com/FSoft-AI4Code/CodeText-parser"
-  - title: vi-medicine
+  - title: "vi-medicine: Vietnamese's clinic chatbot"
     url: "https://github.com/nmd2k/vi-medicine"
 
 highlight_publication:

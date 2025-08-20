@@ -188,6 +188,10 @@
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
+.content-section p {
+  font-size: 0.95rem;
+}
+
 .content-section h2 {
   font-size: 1.8rem;
   font-weight: 600;
