@@ -2,10 +2,13 @@ version: "3.9"
 services:
   hugo:
     image: hugomods/hugo:0.148.2
-    command: server
+    command: server --bind 0.0.0.0 --port 1313 --baseURL https://nmd2k.io.vn/ --appendPort=false --disableFastRender
+    working_dir: /src
     volumes:
       - ./:/src
     ports:
       - "1313:1313"
     restart: always
+    environment:
+      - HUGO_ENV=production
 
