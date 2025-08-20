@@ -1,0 +1,180 @@
+{{- define "main" }}
+
+{{- $meData := site.Data.me }}
+
+<div class="about-container">
+  <!-- Left Sidebar -->
+  <aside class="about-sidebar">
+    <div class="profile-section">
+      <div class="profile-image">
+        <img src="/img/prof_pic.jpg" alt="{{ $meData.profile_name | default "Dung Nguyen Manh" }}" />
+      </div>
+      <h1 class="profile-name">{{ $meData.profile_name | default "Dung Nguyen Manh" }}</h1>
+      <p class="profile-title">{{ $meData.profile_title | default "Research Resident" }}</p>
+      <p class="profile-tagline">{{ $meData.profile_tagline | default "building autonomous coding agents" }}</p>
+    </div>
+
+    <!-- Contact Information -->
+    {{- if $meData.contact }}
+    <div class="contact-section">
+      <h3>Contact</h3>
+      {{- range $meData.contact }}
+        {{- if .email }}
+          <div class="contact-item">
+            <a href="{{ .email }}" class="contact-link">
+              <span class="contact-icon">📧</span>
+              <span class="contact-text">Email</span>
+            </a>
+          </div>
+        {{- end }}
+        {{- if .linkedin }}
+          <div class="contact-item">
+            <a href="https://linkedin.com/in/{{ .linkedin }}" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span class="contact-icon">💼</span>
+              <span class="contact-text">LinkedIn</span>
+            </a>
+          </div>
+        {{- end }}
+        {{- if .github }}
+          <div class="contact-item">
+            <a href="https://github.com/{{ .github }}" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span class="contact-icon">🐙</span>
+              <span class="contact-text">GitHub</span>
+            </a>
+          </div>
+        {{- end }}
+        {{- if .scholar_id }}
+          <div class="contact-item">
+            <a href="https://scholar.google.com/citations?user={{ .scholar_id }}" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span class="contact-icon">🎓</span>
+              <span class="contact-text">Google Scholar</span>
+            </a>
+          </div>
+        {{- end }}
+      {{- end }}
+    </div>
+    {{- end }}
+
+    <!-- Notable Open Source -->
+    <div class="notable-projects">
+      <h3>Notable Open-Source</h3>
+      {{- if $meData.projects }}
+        {{- range $meData.projects }}
+          <div class="contact-item">
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span class="contact-text">{{ .title }}</span>
+            </a>
+          </div>
+        {{- end }}
+      {{- end }}
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="about-main">
+    {{- if .Content }}
+    <div class="post-content">
+      {{- if not (.Param "disableAnchoredHeadings") }}
+      {{- partial "anchored_headings.html" .Content -}}
+      {{- else }}{{ .Content }}{{ end }}
+    </div>
+    {{- end }}
+
+    {{- $meData := site.Data.me }}
+    {{- if $meData }}
+    
+    <!-- AI Research Focus -->
+    <section class="content-section">
+      <h2>AI Research Focus</h2>
+      <p class="section-subtitle">{{ $meData.research_interests | default "Advancing autonomous systems for software development" }}</p>
+    </section>
+
+    <!-- Education -->
+    {{- if $meData.education }}
+    <section class="content-section">
+      <h2>Education</h2>
+      <div class="timeline">
+        {{- range $meData.education }}
+          <div class="timeline-item">
+            <div class="timeline-year">{{ .year }}</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">{{ .title | safeHTML }}</h3>
+              {{- if .institution }}
+                <div class="timeline-institution">{{ .institution }}</div>
+              {{- end }}
+              {{- if .description }}
+                <div class="timeline-description">
+                  {{- if reflect.IsSlice .description }}
+                    <ul>
+                      {{- range .description }}
+                        <li>{{ . }}</li>
+                      {{- end }}
+                    </ul>
+                  {{- else }}
+                    <p>{{ .description }}</p>
+                  {{- end }}
+                </div>
+              {{- end }}
+            </div>
+          </div>
+        {{- end }}
+      </div>
+    </section>
+    {{- end }}
+
+    <!-- Experience -->
+    {{- if $meData.experience }}
+    <section class="content-section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        {{- range $meData.experience }}
+          <div class="timeline-item">
+            <div class="timeline-year">{{ .year }}</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">{{ .title | safeHTML }}</h3>
+              {{- if .institution }}
+                <div class="timeline-institution">{{ .institution }}</div>
+              {{- end }}
+              {{- if .description }}
+                <div class="timeline-description">
+                  {{- if reflect.IsSlice .description }}
+                    <ul>
+                      {{- range .description }}
+                        <li>{{ . }}</li>
+                      {{- end }}
+                    </ul>
+                  {{- else }}
+                    <p>{{ .description }}</p>
+                  {{- end }}
+                </div>
+              {{- end }}
+            </div>
+          </div>
+        {{- end }}
+      </div>
+    </section>
+    {{- end }}
+
+    <!-- Highlight Publications -->
+    {{- if $meData.highlight_publication }}
+    <section class="content-section">
+      <h2>Highlight Publications</h2>
+      <div class="publications-list">
+        {{- range $meData.highlight_publication }}
+          <div class="publication-item">
+            <div class="publication-header">
+              <h3 class="publication-title">{{ .title }}</h3>
+              <span class="publication-conf">{{ .conf }}</span>
+            </div>
+            <div class="publication-author">{{ .author }}</div>
+          </div>
+        {{- end }}
+      </div>
+    </section>
+    {{- end }}
+
+    {{- end }}
+  </main>
+</div>
+
+{{- end }}{{- /* end main */ -}}
