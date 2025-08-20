@@ -12,10 +12,13 @@ contact:
 research_interests: "My research interest is building autonomous coding agents and advancing code understanding capabilities through large language models."
 
 education:
-  - title: PhD of Engineering and IT
-    institution: The University of Melbourne
+  - title: Doctor of Philosophy, Engineering and IT
+    institution: The University of Melbourne, Australia
     year: 2025 - now
-  - title: Bachelor of Computer science
+    description:
+      - "Topic: AI for security in software development"
+      - Melbourne Research Scholarship
+  - title: Bachelor of Computer Science
     institution: Vietnam National University, Hanoi
     year: 2018 - 2022
     description:
@@ -24,11 +27,8 @@ education:
 
 experience:
   - title: AI Resident
-    institution: FPT Software AI Center
-    year: Sep 2022 - now
-  - title: AI Research Intern
-    institution: FPT Software AI Center
-    year: Jul 2022 - Oct 2022
+    institution: FPTSoftware AI Center, FPT
+    year: Jul 2022 - Aug 2025
   - title: Undergraduate Student Researcher
     institution: Vietnam National University, Hanoi
     year: May 2020 - Oct 2022
@@ -37,7 +37,7 @@ experience:
     year: Apr 2021 - Jul 2021
 
 projects:
-  - title: CodeMMLU 
+  - title: CodeMMLU
     url: "https://github.com/FSoft-AI4Code/CodeMMLU"
   - title: Code-llm-evaluator
     url: "https://github.com/FSoft-AI4Code/code-llm-evaluator"
