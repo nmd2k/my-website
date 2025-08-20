@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  hugo:
+    image: hugomods/hugo:0.148.2
+    command: server
+    volumes:
+      - ./:/src
+    ports:
+      - "1313:1313"
+    restart: always
+
