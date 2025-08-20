@@ -1,0 +1,178 @@
+{{- define "main" }}
+
+<article class="gallery-single">
+  <header class="gallery-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="gallery-description">
+      {{ .Description | markdownify }}
+    </div>
+    {{- end }}
+    <div class="gallery-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      {{- if and .Params.images (gt (len .Params.images) 0) }}
+      <span class="photo-count">{{ len .Params.images }} photos</span>
+      {{- end }}
+    </div>
+  </header>
+
+  {{- if .Content }}
+  <div class="gallery-content">
+    {{ .Content }}
+  </div>
+  {{- end }}
+
+  {{- if and .Params.images (gt (len .Params.images) 0) }}
+  <div class="gallery-photos">
+    {{- range .Params.images }}
+    {{- $caption := "" }}
+    {{- if $.Params.imageCaptions }}
+      {{- $caption = index $.Params.imageCaptions . }}
+    {{- end }}
+    <div class="photo-item" data-src="{{ . }}" data-alt="{{ $.Title }}" data-caption="{{ $caption }}">
+      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" class="gallery-photo">
+      {{- if $caption }}
+      <div class="photo-caption">{{ $caption }}</div>
+      {{- end }}
+    </div>
+    {{- end }}
+  </div>
+  {{- end }}
+
+  <!-- Enhanced Photo Slider Modal -->
+  {{- if and .Params.images (gt (len .Params.images) 0) }}
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-header">
+      <span class="close-lightbox">&times;</span>
+      <div class="lightbox-counter">
+        <span id="current-photo">1</span> / <span id="total-photos">{{ len .Params.images }}</span>
+      </div>
+    </div>
+    
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption"></div>
+    </div>
+    
+    <div class="lightbox-controls">
+      <button class="lightbox-nav prev" aria-label="Previous photo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M15 18l-6-6 6-6"/>
+        </svg>
+      </button>
+      <button class="lightbox-nav next" aria-label="Next photo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6"/>
+        </svg>
+      </button>
+    </div>
+    
+    <!-- Thumbnail Navigation -->
+    <div class="lightbox-thumbnails">
+      {{- range $index, $image := .Params.images }}
+      <div class="thumbnail-item {{ if eq $index 0 }}active{{ end }}" data-index="{{ $index }}">
+        <img src="{{ $image }}" alt="Thumbnail {{ add $index 1 }}" loading="lazy">
+      </div>
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+</article>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const lightbox = document.getElementById('lightbox');
+  if (!lightbox) return; // Exit if no lightbox exists
+  
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  const closeBtn = document.querySelector('.close-lightbox');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+  const currentPhotoSpan = document.getElementById('current-photo');
+  const totalPhotosSpan = document.getElementById('total-photos');
+  const thumbnails = document.querySelectorAll('.thumbnail-item');
+  
+  const photos = document.querySelectorAll('.photo-item');
+  if (photos.length === 0) return; // Exit if no photos exist
+  
+  let currentPhotoIndex = 0;
+
+  // Open lightbox
+  photos.forEach((photo, index) => {
+    photo.addEventListener('click', function() {
+      currentPhotoIndex = index;
+      openLightbox(index);
+    });
+  });
+
+  // Thumbnail navigation
+  thumbnails.forEach((thumb, index) => {
+    thumb.addEventListener('click', function() {
+      currentPhotoIndex = index;
+      openLightbox(index);
+    });
+  });
+
+  // Close lightbox
+  closeBtn.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  // Navigation
+  prevBtn.addEventListener('click', function() {
+    currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+    openLightbox(currentPhotoIndex);
+  });
+
+  nextBtn.addEventListener('click', function() {
+    currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+    openLightbox(currentPhotoIndex);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', function(e) {
+    if (lightbox.style.display === 'block') {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      } else if (e.key === 'ArrowLeft') {
+        currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+        openLightbox(currentPhotoIndex);
+      } else if (e.key === 'ArrowRight') {
+        currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+        openLightbox(currentPhotoIndex);
+      }
+    }
+  });
+
+  function openLightbox(index) {
+    const photo = photos[index];
+    const imgSrc = photo.dataset.src;
+    const imgAlt = photo.dataset.alt;
+    const caption = photo.dataset.caption;
+
+    lightboxImg.src = imgSrc;
+    lightboxImg.alt = imgAlt;
+    lightboxCaption.textContent = caption || '';
+    currentPhotoSpan.textContent = index + 1;
+    
+    // Update active thumbnail
+    thumbnails.forEach((thumb, i) => {
+      thumb.classList.toggle('active', i === index);
+    });
+
+    lightbox.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+});
+</script>
+
+{{- end }}

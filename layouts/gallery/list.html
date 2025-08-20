@@ -1,0 +1,47 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description | markdownify }}
+  </div>
+  {{- end }}
+</header>
+
+{{- if .Content }}
+<div class="post-content">
+  {{ .Content }}
+</div>
+{{- end }}
+
+<div class="gallery-grid">
+  {{- range .Pages }}
+  {{- if eq .Type "gallery" }}
+  <article class="gallery-entry">
+    <div class="gallery-preview">
+      {{- if .Params.images }}
+        {{- $firstImage := index .Params.images 0 }}
+        <img src="{{ $firstImage }}" alt="{{ .Title }}" loading="lazy">
+      {{- end }}
+    </div>
+    <div class="gallery-info">
+      <h2 class="gallery-title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+      {{- if .Description }}
+      <p class="gallery-description">{{ .Description }}</p>
+      {{- end }}
+      {{- if .Params.images }}
+      <p class="gallery-count">{{ len .Params.images }} photos</p>
+      {{- end }}
+      <div class="gallery-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      </div>
+    </div>
+  </article>
+  {{- end }}
+  {{- end }}
+</div>
+
+{{- end }}
