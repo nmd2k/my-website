@@ -2,6 +2,11 @@ baseURL: "https://nmd2k.io.vn/"
 title: Dũng Nguyen Manh
 theme: PaperMod
 
+# Reverse proxy configuration
+relativeURLs: false
+canonifyURLs: true
+uglyURLs: false
+
 enableInlineShortcodes: true
 enableRobotsTXT: true
 pagination:

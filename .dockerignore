@@ -1,0 +1,12 @@
+.git
+.gitignore
+README.md
+LICENSE.md
+Dockerfile
+docker-compose.yml
+.dockerignore
+public/
+resources/
+node_modules/
+*.log
+.DS_Store
