@@ -14,44 +14,33 @@
       <p class="profile-tagline">{{ $meData.profile_tagline | default "building autonomous coding agents" }}</p>
     </div>
 
-    <!-- Contact Information -->
+    <!-- Social Icons -->
     {{- if $meData.contact }}
-    <div class="contact-section">
-      <h3>Contact</h3>
-      {{- range $meData.contact }}
-        {{- if .email }}
-          <div class="contact-item">
-            <a href="{{ .email }}" class="contact-link">
-              <span class="contact-icon">📧</span>
-              <span class="contact-text">Email</span>
+    <div class="social-icons-section">
+      <div class="social-icons">
+        {{- range $meData.contact }}
+          {{- if .email }}
+            <a href="{{ .email }}" title="Email">
+              {{ partial "svg.html" (dict "name" "email") }}
             </a>
-          </div>
-        {{- end }}
-        {{- if .linkedin }}
-          <div class="contact-item">
-            <a href="https://linkedin.com/in/{{ .linkedin }}" target="_blank" rel="noopener noreferrer" class="contact-link">
-              <span class="contact-icon">💼</span>
-              <span class="contact-text">LinkedIn</span>
+          {{- end }}
+          {{- if .linkedin }}
+            <a href="https://linkedin.com/in/{{ .linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+              {{ partial "svg.html" (dict "name" "linkedin") }}
             </a>
-          </div>
-        {{- end }}
-        {{- if .github }}
-          <div class="contact-item">
-            <a href="https://github.com/{{ .github }}" target="_blank" rel="noopener noreferrer" class="contact-link">
-              <span class="contact-icon">🐙</span>
-              <span class="contact-text">GitHub</span>
+          {{- end }}
+          {{- if .github }}
+            <a href="https://github.com/{{ .github }}" target="_blank" rel="noopener noreferrer" title="GitHub">
+              {{ partial "svg.html" (dict "name" "github") }}
             </a>
-          </div>
-        {{- end }}
-        {{- if .scholar_id }}
-          <div class="contact-item">
-            <a href="https://scholar.google.com/citations?user={{ .scholar_id }}" target="_blank" rel="noopener noreferrer" class="contact-link">
-              <span class="contact-icon">🎓</span>
-              <span class="contact-text">Google Scholar</span>
+          {{- end }}
+          {{- if .scholar_id }}
+            <a href="https://scholar.google.com/citations?user={{ .scholar_id }}" target="_blank" rel="noopener noreferrer" title="Google Scholar">
+              {{ partial "svg.html" (dict "name" "googlescholar") }}
             </a>
-          </div>
+          {{- end }}
         {{- end }}
-      {{- end }}
+      </div>
     </div>
     {{- end }}
 
@@ -60,9 +49,9 @@
       <h3>Notable Open-Source</h3>
       {{- if $meData.projects }}
         {{- range $meData.projects }}
-          <div class="contact-item">
-            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="contact-link">
-              <span class="contact-text">{{ .title }}</span>
+          <div class="project-item">
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="project-link">
+              <span class="project-name">{{ .title }}</span>
             </a>
           </div>
         {{- end }}
