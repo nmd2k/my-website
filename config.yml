@@ -1,0 +1,105 @@
+baseURL: "https://nmd2k.io.vn/"
+title: Dũng Nguyen Manh
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+pagination:
+  pagerSize: 20
+
+taxonomies:
+    tag: tags
+
+menu:
+    main:
+        - name: About me
+          url: about/
+          weight: 1
+        - name: Papers
+          url: papers/
+          weight: 2
+        - name: Blog
+          url: blog/
+          weight: 3 
+        - name: Gallery
+          url: gallery/
+          weight: 4
+
+
+params:
+    description: "This website hosts Moritz-Maria von Igelfeld's research papers, books, course materials, data, curriculum vitae, and contact information."
+    author: Dũng Nguyen Manh
+    # googleAnalyticsID: "G-XXXXX"
+    DateFormat: "January 2006"
+    defaultTheme: light
+    hideFooter: false
+    disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: false
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    ShowAllPagesInArchive: false
+    MainSections: ["about", "papers", "blog", "gallery"]    
+    ShowToc: true
+    disableScrollToTop: true
+    TocOpen: false
+    ShowWordCount: false
+    UseHugoToc: true
+    comments: false
+    math: true
+    profileMode:
+          enabled: true
+          title: Dũng Nguyen Manh
+          subtitle: 
+            "<strong>Welcome you to my website 🙌.</strong> <br>
+            I am a PhD Student at University of Melbourne.<br>
+            I am deeply interested in security of AI's application, especially in the software development. <br>
+            Beside, I am also a passionate traveler who love photography 📸.
+            "
+          imageUrl: "img/prof_pic.jpg"
+          imageWidth: 180
+          imageHeight: 180
+          buttons:
+            - name: About me
+              url: about/
+            - name: Papers
+              url: papers/
+            - name: Blog
+              url: blog/
+            - name: Gallery
+              url: gallery/
+
+    socialIcons:
+        - name: CV
+          url: pdf/cv_2025.pdf
+        - name: Email
+          url: mailto:dungnm.workspace@gmail.com
+        - name: Google Scholar
+          url: https://scholar.google.com/citations?user=BHpeA4MAAAAJ
+        - name: GitHub
+          url: https://github.com/nmd2k
+
+    assets:
+        disableScrollBarStyle: true
+    cover:
+        hiddenInList: false
+        hiddenInSingle: true
+    label:
+      text: "Dũng Nguyen Manh"
+      icon: img/icon.png
+      iconHeight: 18
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        guessSyntax: true
+        style: autumn 
+    tableOfContents:
+        endLevel: 2
+        ordered: false
+        startLevel: 2

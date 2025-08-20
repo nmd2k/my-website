@@ -1,0 +1,55 @@
+
+profile_name: Dũng Nguyen Manh
+profile_title: PhD Student
+profile_tagline: building autonomous coding agents
+
+contact:
+  - email: mailto:dungnm.workspace@gmail.com
+  - linkedin: nmd2k
+  - github: nmd2k
+  - scholar_id: BHpeA4MAAAAJ
+
+research_interests: "My research interest is building autonomous coding agents and advancing code understanding capabilities through large language models."
+
+education:
+  - title: PhD of Engineering and IT
+    institution: The University of Melbourne
+    year: 2025 - now
+  - title: Bachelor of Computer science
+    institution: Vietnam National University, Hanoi
+    year: 2018 - 2022
+    description:
+      - Honours degree
+      - CGPA 3.61
+
+experience:
+  - title: AI Resident
+    institution: FPT Software AI Center
+    year: Sep 2022 - now
+  - title: AI Research Intern
+    institution: FPT Software AI Center
+    year: Jul 2022 - Oct 2022
+  - title: Undergraduate Student Researcher
+    institution: Vietnam National University, Hanoi
+    year: May 2020 - Oct 2022
+  - title: Machine Learning Intern
+    institution: Viettel Digital Talent Program
+    year: Apr 2021 - Jul 2021
+
+projects:
+  - title: CodeMMLU 
+    url: "https://github.com/FSoft-AI4Code/CodeMMLU"
+  - title: Code-llm-evaluator
+    url: "https://github.com/FSoft-AI4Code/code-llm-evaluator"
+  - title: CodeText-parser
+    url: "https://github.com/FSoft-AI4Code/CodeText-parser"
+  - title: vi-medicine
+    url: "https://github.com/nmd2k/vi-medicine"
+
+highlight_publication:
+  - title: "CodeMMLU: A Multi-Task Benchmark for Assessing Code Understanding Capabilities of CodeLLMs"
+    conf: ICLR 2025
+    author: Dung Nguyen Manh, Thang Phan Chau, Nam Le Hai, Thong T. Doan, Nam V. Nguyen, Quang Pham, and Nghi D. Q. Bui
+  - title: "The Vault: A Comprehensive Multilingual Dataset for Advancing Code Understanding and Generation"
+    conf: EMNLP 2023
+    author: Dung Nguyen Manh, Nam Le Hai, Anh T. V. Dau, Anh Minh Nguyen, Khanh Nghiem, Jin Guo, and Nghi D. Q. Bui

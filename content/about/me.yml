@@ -1,0 +1,40 @@
+
+profile_name: Dũng Nguyen Manh
+profile_title: PhD Student
+profile_tagline: building autonomous coding agents
+email: dungnm.workspace@🅖🅜🅐🅘🅛.🅒🅞🅜
+language: Vietnamese (native), English
+
+research_interests:
+  "My research interest is ...."
+
+education:
+  - title: PhD of Engineering and IT
+    institution: The University of Melbourne
+    year: 2025 - now
+  - title: Bachelor of Computer science
+    institution: Vietnam National University, Hanoi
+    year: 2018 - 2022
+    description:
+      - Honours degree
+      - CGPA 3.61
+
+experience:
+  - title: AI Resident
+    institution: FPT Software AI Center
+    year: Sep 2022 - now
+  - title: AI Research Intern
+    institution: FPT Software AI Center
+    year: Jul 2022 - Oct 2022
+  - title: Undergraduate Student Researcher
+    institution: Vietnam National University, Hanoi
+    year: May 2020 - Oct 2022
+  - title: Machine Learning Intern
+    institution: Viettel Digital Talent Program
+    year: Apr 2021 - Jul 2021
+
+projects:
+  - url: "https://github.com/FSoft-AI4Code/CodeMMLU
+  - url: "https://github.com/FSoft-AI4Code/code-llm-evaluator
+  - url: "https://github.com/FSoft-AI4Code/CodeText-parser
+  - url: "https://github.com/nmd2k/vi-medicine
